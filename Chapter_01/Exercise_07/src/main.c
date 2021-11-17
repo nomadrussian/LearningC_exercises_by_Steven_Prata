@@ -19,7 +19,7 @@ int main(void) {
         /* OR:
          * for(int i = 0; i < 6; i++) {
          *         smile();
-         *         if(i == 2 || i == 4 || i = 5) printf("\n");
+         *         if(i == 2 || i == 4 || i == 5) printf("\n");
          * } */
                                                               
         return 0;
