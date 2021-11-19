@@ -1,6 +1,6 @@
 /* Exercise 2 from Chapter II.
  * Here the user inputs a number and the program prints a character
- * corresponding to the ASCII number.
+ * corresponding to the ASCII code.
  */
 
 #include <stdio.h>
