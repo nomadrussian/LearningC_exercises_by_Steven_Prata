@@ -18,7 +18,7 @@ int main(void) {
         printf("Please, type in amount of water in quarts: ");
         scanf("%lf", &volume);
         molecules = count_molecules(volume);
-        printf("%f quarts contain %e molecules of water. (%.0f)\n", volume, molecules, molecules);
+        printf("%f quarts contain %e molecules of water. (~%.0f)\n", volume, molecules, molecules);
 
         return 0;
 }
