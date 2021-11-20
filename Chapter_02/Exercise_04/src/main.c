@@ -1,20 +1,30 @@
-/* Exercise 4 form Chapter II.
- * This program asks you to type in a number with floating point
- * and then prints it in different formats.
- */
+/* Exercise 4 from Chapter II.
+ * This task is to have some functions practice (just the basics):
+ *
+ *      Вдобавок к функции main() в программе должны использоваться две определенные
+ *      пользователем функции: jolly(), которая выводит сообщение “Он веселый
+ *      молодец!" один раз, и deny(), выводящая сообщение в последней строке.
+ *
+ * So...yeah, nothing tough. Just to figure out how it works.                         */
 
 #include <stdio.h>
 
+void jolly();
+void deny();
+
 int main(void) {
-
-        double x;
-
-        printf("Please, type in a number with floating point: ");
-        scanf("%lf", &x);
-        printf("Decimal format                 : %f\n", x);
-        printf("Exponential format             : %e\n", x);
-        printf("Hexadecimal exponential format : %a\n", x); //Binary exponential doesn't work on my system.
-
+        jolly();
+        jolly();
+        jolly();
+        deny();
         return 0;
+}
+
+void jolly() {
+        printf("Он весёлый молодец!\n");
+}
+
+void deny() {
+        printf("Никто не может это отрицать!\n");
 }
 

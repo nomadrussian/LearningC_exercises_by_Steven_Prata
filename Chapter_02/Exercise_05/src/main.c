@@ -1,21 +1,28 @@
-/* Exercise 5 from Chapter II.
- * Just calculating full years to seconds. Nothing complicated.
- */
+/* Exercise 5 from Chapter 1I.
+ * Just a bit more functions practice. */
 
 #include <stdio.h>
 
-#define SECS_IN_YEAR 3.156e7
+void br(void);
+void ic(void);
 
 int main(void) {
-        
-        unsigned int    years;
-        double          seconds;
-        
-        printf("Please, type in years: ");
-        scanf("%u", &years);
-        seconds = years * SECS_IN_YEAR;
-        printf("It's equal to %g seconds. (or %.0f)\n", seconds, seconds);
-
+        br();
+        printf(", ");
+        ic();
+        printf("\n");
+        ic();
+        printf(",\n");
+        br();
+        printf("\n");
         return 0;
+}
+
+void br(void) {
+        printf("Бразилия, Россия");
+}
+
+void ic(void) {
+        printf("Индия, Китай");
 }
 

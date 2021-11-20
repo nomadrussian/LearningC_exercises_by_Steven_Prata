@@ -1,19 +1,31 @@
-/* Exercise 7 from Chapter II.
- * Converting inches to centimetres.
- */
+/* Exercise 8 from Chapter II.
+ * No comment, just a function and some \n's. */
 
 #include <stdio.h>
 
-#define INCH_SIZE 2.54f
+void smile(void);
 
 int main(void) {
+        smile();
+        smile();
+        smile();
+        printf("\n");
+        smile();
+        smile();
+        printf("\n");
+        smile();
+        printf("\n");
 
-        float inches;
-
-        printf("Please, type in inches amount: ");
-        scanf("%f", &inches);
-        printf("%g\" = %gcm\n", inches, inches * INCH_SIZE);
-
+        /* OR:
+         * for(int i = 0; i < 6; i++) {
+         *         smile();
+         *         if(i == 2 || i == 4 || i == 5) printf("\n");
+         * } */
+                                                              
         return 0;
+}
+
+void smile(void) {
+        printf("Улыбайся!");
 }
 

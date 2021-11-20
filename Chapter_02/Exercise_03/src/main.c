@@ -1,24 +1,18 @@
 /* Exercise 3 from Chapter II.
- * In this exercise the program is playing a sound using ASCII code
- * and printing a message.
- * Just so simple.
- */
+ * The task is simple - convert years to days.
+ * So you don't care about leap years and we consider only FULL years that you have lived: 
+ *
+ *      Напишите программу, которая преобразует ваш возраст в полных годах в количество
+ *      дней и отображает на экране оба значения. Не обращайте внимания на високосные годы. 
+ * 
+ * But a part of me wants to do it in a much more complicated way...I must learn to stop.
+ * At the right moment. So, I'm not going to do it.                                         */
 
 #include <stdio.h>
 
-void playASCIISound(void);
-
 int main(void) {
-        playASCIISound();
-        printf("Напуганная внезапным звуком, Вика вскрикнула:\n\"Что это было?????\"\n");
+        int my_age = 22; //My age in 2021.
+        printf("I'm %d full years old or %d days.\n", my_age, my_age * 365);
         return 0;
 }
-
-void playASCIISound(void) {
-        printf("\a");       
-}
-
-/* Unfortunately, My Linux Mint Terminal doesn't want to play it. 
- * But if I use e.g. an online C compiler, it has a nice sound :)
- */
 

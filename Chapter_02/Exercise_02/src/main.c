@@ -1,16 +1,16 @@
 /* Exercise 2 from Chapter II.
- * Here the user inputs a number and the program prints a character
- * corresponding to the ASCII code.
- */
+ * The task is simple - just write your name and your adress. Of course, it's a joke,
+ * nobody wants to show his home adress :D
+ * That's the task: 
+ *
+ *  Напишите программу, выводящую ваше имя и адрес.
+ *
+ * So simple. I don't have to invent anything. Just keep it simple.                  */
 
 #include <stdio.h>
-#include <stdint.h>
 
 int main(void) {
-        int ch;
-        printf("Please, type in an number: ");
-        scanf("%d", &ch);
-        printf("%d is %c in ASCII.\n", ch, ch);
+        printf("The program was written by George Glebov. Saratov, Russia. 2021\n");
         return 0;
 }
 
