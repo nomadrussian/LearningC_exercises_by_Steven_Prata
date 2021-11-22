@@ -22,8 +22,8 @@ int main(void) {
         fuelCons_MtoGAL = miles  / gallons;
         fuelCons_LtoKM  = litres / kilometres * 1.0e2;
         
-        printf("Fuel Consumption in miles/gallon : %.2lf\n", fuelCons_MtoGAL);
-        printf("Fuel Consumption in liter/100km  : %.2lf\n", fuelCons_LtoKM);
+        printf("Fuel Consumption in miles/gallon : %.2f\n", fuelCons_MtoGAL);
+        printf("Fuel Consumption in liter/100km  : %.2f\n", fuelCons_LtoKM);
 
         return 0;
 }
