@@ -1,5 +1,5 @@
 /* Exercise 8 from Chapter IV.
- * Calculating fuel consumption.
+ * Calculating the fuel consumption.
  */
 
 #include <stdio.h>
