@@ -15,12 +15,15 @@ double cm_toMetres(double num);
 int main(void) {
 
         double height_cm;
+        char   name[17];
 
+        printf("Please, type in your name: ");
+        scanf("%16s", name);
         printf("Please, type in your height in cm: ");
         scanf("%lf", &height_cm);
-        printf("Your height in metres  :  %g\n", cm_toMetres(height_cm));
-        printf("Your height in inches  :  %g\n", cm_toInches(height_cm));
-        printf("Your height in feet    :  %g\n", cm_toFeet(height_cm));        
+        printf("%s, your height in metres  :  %g\n", name, cm_toMetres(height_cm));
+        printf("%s, your height in inches  :  %g\n", name, cm_toInches(height_cm));
+        printf("%s, your height in feet    :  %g\n", name, cm_toFeet(height_cm));        
 
         return 0;
 }
