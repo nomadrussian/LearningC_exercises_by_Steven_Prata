@@ -13,13 +13,12 @@ int main(void) {
         int  hours, minutes, total_minutes;
 
         do {
-                request:
                 printf("Please, type in the amount of minutes. Give me zero to exit: ");
                 int check = scanf("%d", &total_minutes); //This variable equals 1 if the number has been successfully read.
                 
                 if(check == 0) { //Otherwise try again.
                         clearInputBuffer();
-                        goto request;
+                        continue;
                 }
                 
                 hours    = total_minutes / MINUTES_IN_HOUR; 
