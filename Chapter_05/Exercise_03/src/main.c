@@ -31,7 +31,7 @@ int main(void) {
 }
 
 void clearInputBuffer(void) {
-        char buffer;
+        static char buffer; //The variable is static to avoid infinite memory allocation.
         while((buffer = getchar()) != '\n' && buffer != EOF);
 }
 
