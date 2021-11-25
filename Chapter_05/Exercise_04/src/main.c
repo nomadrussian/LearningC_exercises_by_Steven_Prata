@@ -12,9 +12,8 @@ void clearInputBuffer(void);
 
 int main() {
 
-        double inches;
+        double inches, centimetres;
         int    feet;
-        double centimetres;
 
         while(1) {
                 printf("Please, type in the amount of centimetres. Give me negative or zero to exit: ");
