@@ -8,7 +8,7 @@ void clearInputBuffer();
 
 int main(void) {
 
-        int count, i;
+        int count, i, check;
         unsigned long long sum;
 
         while(1) {
@@ -16,7 +16,7 @@ int main(void) {
                 sum   = 0;
         
                 printf("Please, type in the number of iterations you want. Give me negative or zero to exit: ");
-                int check = scanf("%d", &i);
+                check = scanf("%d", &i);
 
                 if(check == 0) {
                         clearInputBuffer();
