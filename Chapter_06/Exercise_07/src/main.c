@@ -8,7 +8,7 @@
 #include <string.h>
 #include <stdint.h>
 
-#define MAX 65535 // not including '\0' symbol
+#define MAX 4095 // not including '\0' symbol
 
 void printAsterisks(uint8_t);
 void clearString(char[]);
@@ -20,7 +20,7 @@ int main(void) {
         int length, index;
 
         printAsterisks(46);
-        printf("Please, type in any string. To exit give me #. THE MAX LENGTH: 65535 symbols.\n");
+        printf("Please, type in any string. To exit give me #. THE MAX LENGTH: 4095 symbols.\n");
         printAsterisks(46);
 
         while(1) {
