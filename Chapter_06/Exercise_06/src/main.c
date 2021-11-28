@@ -30,7 +30,7 @@ int main(void) {
         for(int i = l_limit; i <= h_limit; i++) {
                 long sqr = (long)i * i;
                 printf("| NUM: %10d | SQR: %19ld | CUB: ", i, sqr);
-                if(i < 2097152) // The square root of maximum of long int.
+                if(i < 2097152) // The cubic root of maximum of long int.
                         printf("%19ld |\n", sqr * i);
                 else                        
                         printf("%19Lg |\n", (long double)sqr * i);
