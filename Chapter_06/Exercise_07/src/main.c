@@ -8,7 +8,7 @@
 #include <string.h>
 #include <stdint.h>
 
-#define MAX 65535 // not including '\0' symbol
+#define MAX 4095 // I mean, 65535 is delirious. It can read 4095 max anyway (not 4096 because it's not including '\0' symbol)
 
 void printAsterisks(uint8_t);
 void clearString(char[]);
@@ -19,9 +19,9 @@ int main(void) {
         char text[MAX + 1], temp;
         int length, index;
 
-        printAsterisks(46);
-        printf("Please, type in any string. To exit give me #. THE MAX LENGTH: 65535 symbols.\n");
-        printAsterisks(46);
+        printAsterisks(76);
+        printf("Please, type in any string. To exit give me #. THE MAX LENGTH: 4095 symbols.\n");
+        printAsterisks(76);
 
         while(1) {
                 index = 0;
@@ -39,7 +39,7 @@ int main(void) {
                 /* Thanks to Some programmer dude who helped me to fix this bug with string underflow.
                  * I was attempting to call clearInputBuffer() in all cases, but I didn't have to.
                  * So, we have to check if there is a new line to stop reading the input.
-                 * This happenes because with underflow I press <Enter> once and fgets() reads it as '\n', 
+                 * This happens because with underflow I press <Enter> once and fgets() reads it as '\n', 
                  * but clearInputBuffer() waits for the second new line ('\n'). 
                  * So, if the input length is less than MAX, we don't have to clear the input buffer, but
                  * we HAVE TO finish the string earlier with '\0'.
